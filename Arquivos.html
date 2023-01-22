@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="arquivos.css">
+    <link rel="shortcut icon" href="Graphicloads-100-Flat-Download-2.256.png" type="image/x-icon">
+    <title>Base Arquivos</title>
+</head>
+<body>
+
+    
+    <div class="menu">
+        <div class="title" onclick="f()">Arquivos</span>
+          <div class="arrow"></div>
+        </div>
+        <div class="dropdown">
+          <a href="https://186.209.79.84/telefonia/AeroAdmin.exe">
+            <p>AeroAdmin</p>
+          </a>
+          <a href="https://186.209.79.84/telefonia/QuickTimeInstaller.exe" target="_blank">
+            <p>QuickTime</p>
+          </a>
+          <a href="https://186.209.79.84/telefonia/Zoiper_3.9_Setup.exe" target="_blank">
+            <p>Zoiper</p>
+          </a>
+          <a href="https://186.209.79.84/telefonia/netscan.zip" target="_blank">
+            <p>Netscan</p>  
+          </a> 
+          <a href="index.html">
+          <p>Voltar</p>
+          </a>  
+        </div>
+      </div>
+      <footer>
+        <a href="https://www.abatel.com.br/" target="_blank">©Abatel PBX is licensed under GPL. 2006 - 2023.</a>
+    </footer>
+</body>
+<script>
+    function f() {
+  document.getElementsByClassName('dropdown')[0].classList.toggle('down');
+  document.getElementsByClassName('arrow')[0].classList.toggle('gone');
+  if (document.getElementsByClassName('dropdown')[0].classList.contains('down')) {
+    setTimeout(function() {
+      document.getElementsByClassName('dropdown')[0].style.overflow = 'visible'
+    }, 600)
+  } else {
+    document.getElementsByClassName('dropdown')[0].style.overflow = 'hidden'
+  }
+}
+</script>
+</html>
